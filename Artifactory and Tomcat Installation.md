@@ -24,7 +24,7 @@ Artifactory
 
 ## Step 1 : Install pre-requisite software packages
 ```
-yum install java-1.8.0-openjdk-devel vim wget git -y
+yum install java-11-openjdk -y
 systemctl stop firewalld;systemctl disable firewalld
 wget https://archive.apache.org/dist/maven/maven-3/3.8.5/binaries/apache-maven-3.8.5-bin.tar.gz
 tar xvf apache-maven-3.8.5-bin.tar.gz
@@ -40,11 +40,11 @@ vim ~/.bash_profile
 ```
 In this file
 ```
-export JAVA_HOME=/usr/lib/jvm/java-1.8.0
-export JRE_HOME=/usr/lib/jvm/java-1.8.0/jre
+export JAVA_HOME=/usr/lib/jvm/jre-11-openjdk/
+export JRE_HOME=/usr/lib/jvm/jre-11-openjdk/
 PATH=$PATH:$HOME/bin:$JAVA_HOME/bin:$JRE_HOME/bin
 export M2_HOME=/usr/local/apache-maven
-export M2=$M2_HOME/bin 
+export M2=$M2_HOME/bin
 export PATH=$M2:$PATH
 ```
 ```
@@ -64,9 +64,9 @@ mv artifactory-rpms.repo  /etc/yum.repos.d/
 ```
 
 Note ::::::
-- {1)After giving wget https://releases.jfrog.io/artifactory/artifactory-rpms/artifactory-rpms.repo -O jfrog-artifactory-rpms.repo you are able to see Saving to: ‘jfrog-artifactory-rpms.repo’
-- 2) cat /etc/yum.repos.d/jfrog-artifactory-rpms.repo (take base url and check in web browser you can seel all repo)
-- 3)now you aee able to see jfrog artifactory }
+- After giving wget https://releases.jfrog.io/artifactory/artifactory-rpms/artifactory-rpms.repo -O jfrog-artifactory-rpms.repo you are able to see Saving to: ‘jfrog-artifactory-rpms.repo’
+- cat /etc/yum.repos.d/jfrog-artifactory-rpms.repo (take base url and check in web browser you can seel all repo)
+- now you are able to see jfrog artifactory }
 
 
 
