@@ -64,9 +64,9 @@ mv artifactory-rpms.repo  /etc/yum.repos.d/
 ```
 
 Note ::::::
-{1)After giving wget https://releases.jfrog.io/artifactory/artifactory-rpms/artifactory-rpms.repo -O jfrog-artifactory-rpms.repo you are able to see Saving to: ‘jfrog-artifactory-rpms.repo’
-2) cat /etc/yum.repos.d/jfrog-artifactory-rpms.repo (take base url and check in web browser you can seel all repo)
-3)now you aee able to see jfrog artifactory }
+- {1)After giving wget https://releases.jfrog.io/artifactory/artifactory-rpms/artifactory-rpms.repo -O jfrog-artifactory-rpms.repo you are able to see Saving to: ‘jfrog-artifactory-rpms.repo’
+- 2) cat /etc/yum.repos.d/jfrog-artifactory-rpms.repo (take base url and check in web browser you can seel all repo)
+- 3)now you aee able to see jfrog artifactory }
 
 
 
