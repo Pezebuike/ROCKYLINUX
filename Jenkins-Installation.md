@@ -130,6 +130,7 @@ The following plugins needs to be installed
 - dashboard view
 - Build Pipeline
 - Deploy to container
+- maven integration
 - Email Extension Template
 *******************************************************************************************************************
 - Step 8: Global Tools Settings - In Jenkins Console - JAVA , MAVEN, GIT
